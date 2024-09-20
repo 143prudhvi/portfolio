@@ -1,0 +1,58 @@
+@use 'sass:color';
+@import './../../index.scss';
+
+.intro {
+    background-color: $primary-color;
+    height: 100vh;
+    display: flex;  // Use flexbox
+    justify-content: center;  // Center horizontally
+    align-items: center;  // Center vertically
+    flex-direction: column;
+
+    .profile-pic-outer-ring{
+        background-color: $secondary-color;
+        padding: 16px;
+        border-radius: 50%;
+
+        .profile-pic-inner-ring{
+            background-color: white;
+            padding: 8px;
+            border-radius: 49%;
+
+            img{
+                height: 30vh;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .description{
+        width: 720px;
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .btn-resume-download{
+        background-color: $secondary-color;
+        color: $primary-color;
+        padding: 8px;
+        font-size: 24px;
+        font-weight: bold;
+        border: none;
+        border-radius: 12px;
+        margin: 8px 0;
+        &:hover{
+            opacity: 0.8;
+            transition: padding 0.5s ease-in;
+            cursor: pointer;
+        }
+    }
+
+    
+}
