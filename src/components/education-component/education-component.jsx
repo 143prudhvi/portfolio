@@ -8,11 +8,8 @@ const EducationComponent = () => {
         <div className='education'>
             <h1 className='education-title'>Education</h1>
             <div className='timeline'>
-                <div className='education-cotainer left'>
+                <div className='education-cotainer right'>
                     <div className='education-content'>
-                        <div className='education-logo'>
-                            <img src={MGRLogo} />
-                        </div>
                         <div className='education-details'>
                             <h1 className='education-degree'>Bachelor's of Science in Computer Science</h1>
                             <div className='education-university'>Dr. MGR University</div>
@@ -25,6 +22,9 @@ const EducationComponent = () => {
                                 <li>Image Processing</li>
                                 <li>Database Management</li>
                             </ul>
+                        </div>
+                        <div className='education-logo'>
+                            <img src={MGRLogo} />
                         </div>
                     </div>
                 </div>
