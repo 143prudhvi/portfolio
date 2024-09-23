@@ -1,21 +1,14 @@
 @import './../../index.scss';
 
 .education{
-    height: 100vh;
     background-color: $secondary-color;
     color: $tertiary-color;
-
-    &-title{
-        margin-top: 0;
-        padding-top: 48px;
-        text-align: center;
-    }
+    padding-bottom: 8px;
 
     .timeline{
         position: relative;
         max-width: 1200px;
         margin: 0 auto;
-        height: 80%;
 
         &::after{
             content: '';
@@ -24,16 +17,17 @@
             background-color: $tertiary-color;
             top: 0;
             bottom: 0;
-            left: 20%;
+            left: 10%;
             margin-left: -3px;
             border-radius: 8px;
+            margin-bottom: 48px;
         }
 
-        .education-cotainer{
+        .education-cotainer, .experience-cotainer{
             position: relative;
-            width: 75%;
+            width: 80%;
             color: $secondary-color;
-            padding: 48px 40px;
+            padding: 24px 40px;
             margin: 8px 0;
 
             &::after{
@@ -49,14 +43,14 @@
                 z-index: 1;
             }
 
-            .education-content{
+            .education-content, .experience-content{
                 background-color: $primary-color;
                 position: relative;
                 border-radius: 6px;
                 display: flex;
                 height: 100%;
 
-                .education-logo{
+                .education-logo, .experience-logo{
                     max-width: 160px;
                     background-color: $tertiary-color;
                     align-self: center;
@@ -72,15 +66,15 @@
                     }
                 }
 
-                .education-details{
+                .education-details, .experience-details{
                     padding: 24px 16px;
                     font-size: 12px;
 
-                    .education-year{
+                    .education-year, .experience-year{
                         font-size: 14px;
                     }
 
-                    .education-university{
+                    .education-university, .experience-company{
                         font-style: italic;
                         font-size: 18px;
                         padding: 4px 0;
@@ -91,10 +85,11 @@
                         font-style: italic;
                     }
 
-                    .education-coursework{
+                    .education-coursework, .experience-work{
                         list-style-type: none; /* Remove default list style */
                         padding: 4px 0 0 0;
                         margin: 0;
+                        padding: 16px 0 0 0;
 
                         li{
                             display: inline-block; /* Display list items inline */
@@ -122,6 +117,15 @@
             }
         }
 
+        .education-cotainer{
+            &::after{
+                border-color: $education-color;
+            }
+            .education-content{
+                background-color: $education-color; 
+            }
+        }
+
         .left {
             left: 0;
 
@@ -131,7 +135,7 @@
         }
         
         .right {
-            left: 20%;
+            left: 10%;
 
             .education-logo{
                 border-radius: 0 6px 6px 0;
@@ -169,6 +173,18 @@
             left: -16px;
         }
 
+        .education-cotainer.right{
+            &::before{
+                border-color: transparent $education-color transparent transparent;
+            }
+        }
         
     }
+}
+
+.section-title{
+    margin-top: 0;
+    padding-top: 48px;
+    text-align: center;
+    position: relative;
 }
