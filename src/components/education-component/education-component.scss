@@ -181,3 +181,28 @@
         
     }
 }
+
+@media (max-width: $s-width) {
+    .education{
+        .timeline{
+            &::after{
+                left: 7%;
+            }
+
+            .education-cotainer, .experience-cotainer{
+                width: 93%;
+                padding: 18px 24px;
+            }
+
+            .right{
+                left: 7%;
+            }
+
+            .right::before{
+                left: 16px;
+                top: 62px;
+                border-width: 8px 8px 8px 0;
+            }
+        }
+    }
+}
