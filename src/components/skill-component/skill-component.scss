@@ -1,0 +1,62 @@
+@import './../../index.scss';
+
+.skill{
+    display: inline-block;
+    width: 25%;
+    padding: 8px;
+    min-width: 300px;
+
+    .skill-content {
+        display: flex; /* Use flexbox for alignment */
+        align-items: center; /* Center items vertically */
+    }
+}
+
+.icon{
+    color: $primary-color;
+    background-color: $secondary-color;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex; /* Center icon within the box */
+    align-items: center;
+    justify-content: center; /* Center icon horizontally */
+}
+
+.skill-detail{
+    display: flex;
+    width: calc( 100% - 72px );
+    margin: 0 8px;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.skill-name{
+    font-size: 24px;
+    padding: 8px;
+}
+
+.skill-bar {
+    background-color: $primary-color; /* Background color of the bar */
+    width: 100%; /* Full width */
+    height: 8px; /* Height of the bar */
+    overflow: hidden; /* Hide overflow */
+    margin: 4px 0;
+}
+
+.skill-bar-fill {
+    background-color: $secondary-color; /* Fill color of the bar */
+    height: 100%; /* Fill should take full height */
+    transition: width 0.3s ease; /* Smooth transition for width change */
+}
+
+@media (max-width: $l-width){
+    .skills{
+        margin: 0 16px;
+    }
+    .skill-name{
+        font-size: 20px;
+    }
+}
