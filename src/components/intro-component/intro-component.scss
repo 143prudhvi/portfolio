@@ -85,3 +85,17 @@
 
     
 }
+
+.status-bar{
+    position:sticky;
+    top: 0;
+    min-height: 64px;
+    background-color: $secondary-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $tertiary-color;
+    font-size: 20px;
+    font-weight: 700;
+}
