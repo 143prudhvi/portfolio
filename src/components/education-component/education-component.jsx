@@ -16,7 +16,7 @@ const EducationComponent = () => {
                         <div className='experience-details'>
                             <h1 className='experience-position'>Graduate Research Assistant</h1>
                             <div className='experience-company'>Wichita State University</div>
-                            <div className='experience-year'><strong>Aug 2023</strong> - <strong>Dec 2024</strong></div>
+                            <div className='experience-year'><strong>Aug 2023</strong> - <strong>Present</strong></div>
                             <ul className='experience-work'>
                                 <li>Developed a Django-based web application for product comparison, enhancing research activity analysis.</li>
                                 <li>Implemented routing, and static file management, and integrated MySQL using Django ORM for optimized database interactions.</li>

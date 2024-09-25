@@ -8,6 +8,7 @@
     justify-content: center;  // Center horizontally
     align-items: center;  // Center vertically
     flex-direction: column;
+    min-height: 540px;
 
     .profile-pic-outer-ring{
         background-color: $secondary-color;
@@ -58,7 +59,7 @@
     
 }
 
-@media (max-width: $xs-width) {
+@media (max-width: $xs-width), (max-height: 767px) {
     .intro{
         .profile-pic-outer-ring{
             
