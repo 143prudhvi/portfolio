@@ -1,7 +1,7 @@
 import SkillComponent from '../skill-component/skill-component';
 import './skills-component.scss';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
-import { faPython, faJava, faJs } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faLeaf, faPepperHot, faTerminal, faUserGear } from '@fortawesome/free-solid-svg-icons';
+import { faPython, faJava, faJs, faEnvira, faReact, faAngular, faAws, faDocker, faGithub, faHtml5, faCss3, faSass } from '@fortawesome/free-brands-svg-icons';
 
 const SkillsComponents = () => {
 
@@ -14,7 +14,7 @@ const SkillsComponents = () => {
             },
             {
                 "name" : "Java",
-                "rating" : 7,
+                "rating" : 8,
                 "icon" : faJava
             },
             {
@@ -28,6 +28,48 @@ const SkillsComponents = () => {
                 "icon" : faJs
             }
         ],
+        "Web" : [
+            {
+                "name" : "Django",
+                "rating" : 8,
+                "icon" : faPython
+            },
+            {
+                "name" : "Flask",
+                "rating" : 7,
+                "icon" : faPepperHot
+            },
+            {
+                "name" : "Spring Boot",
+                "rating" : 8,
+                "icon" : faLeaf
+            },
+            {
+                "name" : "React",
+                "rating" : 7,
+                "icon" : faReact
+            },
+            {
+                "name" : "Angular",
+                "rating" : 6,
+                "icon" : faAngular
+            },
+            {
+                "name" : "HTML",
+                "rating" : 9,
+                "icon" : faHtml5
+            },
+            {
+                "name" : "CSS",
+                "rating" : 8,
+                "icon" : faCss3
+            },
+            {
+                "name" : "Sass",
+                "rating" : 8,
+                "icon" : faSass
+            }
+        ],
         "Database" : [
             {
                 "name" : "MySQL",
@@ -37,14 +79,41 @@ const SkillsComponents = () => {
             {
                 "name" : "MongoDB",
                 "rating" : 6,
-                "icon" : faDatabase
+                "icon" : faEnvira
             }
+        ],
+        "Cloud & DevOps" : [
+            {
+                "name" : "AWS(EC2,S3,RDS)",
+                "rating" : 8,
+                "icon" : faAws
+            },
+            {
+                "name" : "Docker",
+                "rating" : 5,
+                "icon" : faDocker
+            },
+            {
+                "name" : "Jenkins",
+                "rating" : 6,
+                "icon" : faUserGear
+            },
+            {
+                "name" : "Github",
+                "rating" : 8,
+                "icon" : faGithub
+            },
+            {
+                "name" : "Unix/Linux",
+                "rating" : 8,
+                "icon" : faTerminal
+            },
         ]
     }
 
     return (
         <div id='skills' className='skills'>
-            <h1 className='section-title'>Skills</h1>
+            <h1 className='section-title'>Technical Skills</h1>
             {
                 Object.keys(skills).map((key) => {
                     return <div className='skills-sub' key={key + "_container"}>
