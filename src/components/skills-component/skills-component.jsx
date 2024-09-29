@@ -40,7 +40,7 @@ const SkillsComponents = () => {
                 "icon" : faPepperHot
             },
             {
-                "name" : "Spring Boot",
+                "name" : "SpringBoot",
                 "rating" : 8,
                 "icon" : faLeaf
             },

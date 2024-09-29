@@ -4,7 +4,7 @@ import Logo from './../../assets/Images/ProfilePic.jpg'
 const IntroComponent = () => {
     return (
         <div>
-            <div className='status-bar'>This portfolio is currently under development, with regular updates being added day by day. Please check back for new content and improvements!</div>
+            <div className='status-bar'>This portfolio is currently under development, with regular updates being added day by day.</div>
             <div className='intro'>
                 <div className='profile-pic-outer-ring'>
                     <div className='profile-pic-inner-ring'>

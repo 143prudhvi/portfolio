@@ -10,6 +10,11 @@
 .skills-sub{
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.skills-list{
+    text-align: center;
 }
 
 @media (max-width: $l-width){
