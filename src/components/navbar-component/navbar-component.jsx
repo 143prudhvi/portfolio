@@ -8,9 +8,11 @@ const Navbar = ({aboutRef, skillsRef, eduRef, projectRef, contactRef, onClickHan
     return(
         <div className='navbar'>
             <div className='navbar-container'>
-                
-                <div className='profile-pic-ring'>
-                    <img src={Logo} />
+                <div className='profile'>
+                    <div className='profile-pic-ring'>
+                        <img src={Logo} />
+                    </div>
+                    <div className='profile-name'>Venkata Annabathina</div>
                 </div>
                 <div className='menu-icon'>
                     <FontAwesomeIcon icon={faBars} />

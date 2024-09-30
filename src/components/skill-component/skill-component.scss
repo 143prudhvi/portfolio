@@ -8,6 +8,9 @@
     .skill-content {
         display: flex; /* Use flexbox for alignment */
         align-items: center; /* Center items vertically */
+        background-color: $secondary-color;
+        color: $tertiary-color;
+        border-radius: 8px;
     }
 }
 

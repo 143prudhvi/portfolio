@@ -67,6 +67,17 @@
     padding: 4px 16px;
 }
 
+.social{
+    margin: 32px 0 0 0;
+}
+
+.social-icon{
+    display: inline;
+    font-size: 48px;
+    color: $secondary-color;
+    padding: 16px;
+}
+
 @media (max-width: $m-width){
     .name{
         font-size: 48px;
