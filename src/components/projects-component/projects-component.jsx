@@ -1,8 +1,8 @@
 import './projects-component.scss';
 
-const ProjectsComponent = () => {
+const ProjectsComponent = ({projectRef}) => {
     return (
-        <div className='projects'>
+        <div className='projects' ref={projectRef}>
             <h1 className='section-title'>Projects</h1>
         </div>
     )

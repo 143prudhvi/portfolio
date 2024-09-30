@@ -3,9 +3,9 @@ import MGRLogo from './../../assets/Images/mgr.png'
 import WichitaLogo from './../../assets/Images/wichitastate.png'
 
 
-const EducationComponent = () => {
+const EducationComponent = ({eduRef}) => {
     return(
-        <div className='education'>
+        <div className='education' ref={eduRef}>
             <h1 className='section-title'>
                 <span className='education-legend'></span>Education
                 <span className='experience-legend'></span> & Experience

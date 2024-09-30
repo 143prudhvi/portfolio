@@ -1,0 +1,70 @@
+@import './../../index.scss';
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 72px;
+    background-color: $secondary-color;
+    z-index: 10;
+    width: 100%;
+    color: white;
+}
+
+.navbar-container{
+    max-width: 1200px;
+    margin: 8px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-pic-ring{
+    background-color: white;
+    padding: 4px;
+    border-radius: 50%;
+    display: inline-block;
+    height: 56px;
+    margin-left: 32px;
+
+
+    img{
+        width: 48px;
+        border-radius: 50%;
+        object-fit: contain;
+    }
+}
+
+.menu{
+    margin-right: 24px;
+}
+
+.menu-item{
+    display: inline-block;
+    padding: 0 12px;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    cursor: pointer;
+    font-weight: 700;
+
+    &:hover{
+        color: $primary-color;
+    }
+}
+
+.menu-icon{
+    display: none;
+    margin: 0 24px;
+    font-size: 32px;
+}
+
+@media (max-width: $s-width){
+    .menu-icon{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+}
+

@@ -38,19 +38,19 @@
     font-style: italic;
 }
 
-.skill-bar {
-    background-color: $primary-color; /* Background color of the bar */
-    width: 100%; /* Full width */
-    height: 8px; /* Height of the bar */
-    overflow: hidden; /* Hide overflow */
-    margin: 4px 0;
-}
+// .skill-bar {
+//     background-color: $primary-color; /* Background color of the bar */
+//     width: 100%; /* Full width */
+//     height: 8px; /* Height of the bar */
+//     overflow: hidden; /* Hide overflow */
+//     margin: 4px 0;
+// }
 
-.skill-bar-fill {
-    background-color: $secondary-color; /* Fill color of the bar */
-    height: 100%; /* Fill should take full height */
-    transition: width 0.3s ease; /* Smooth transition for width change */
-}
+// .skill-bar-fill {
+//     background-color: $secondary-color; /* Fill color of the bar */
+//     height: 100%; /* Fill should take full height */
+//     transition: width 0.3s ease; /* Smooth transition for width change */
+// }
 
 @media (max-width: $l-width){
     .skills{

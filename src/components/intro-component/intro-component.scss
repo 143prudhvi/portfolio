@@ -10,24 +10,6 @@
     flex-direction: column;
     min-height: 540px;
 
-    .profile-pic-outer-ring{
-        background-color: $secondary-color;
-        padding: 16px;
-        border-radius: 50%;
-
-        .profile-pic-inner-ring{
-            background-color: white;
-            padding: 8px;
-            border-radius: 49%;
-
-            img{
-                width: 320px;
-                border-radius: 50%;
-                object-fit: contain;
-            }
-        }
-    }
-
     h1{
         font-size: 40px;
     }
@@ -59,6 +41,17 @@
     
 }
 
+.name{
+    font-size: 64px;
+}
+
+.last-name{
+    background-color: $secondary-color;
+    color: $tertiary-color;
+    padding: 0 32px;
+    border-radius: 8px;
+}
+
 .status-bar{
     position:sticky;
     top: 0;
@@ -74,17 +67,33 @@
     padding: 4px 16px;
 }
 
-@media (max-width: $xs-width), (max-height: 767px) {
+@media (max-width: $m-width){
+    .name{
+        font-size: 48px;
+    }
+
     .intro{
-        .profile-pic-outer-ring{
-            
-            .profile-pic-inner-ring{
-                img{
-                    width: 240px;
-                }
-            }
+        h1{
+            font-size: 32px;
         }
 
+        .description{
+            width: 80%;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: $xs-width) {
+    .name{
+        font-size: 32px;
+    }
+
+    .last-name{
+        padding: 0 8px;
+    }
+
+    .intro{
         h1{
             font-size: 24px;
         }
@@ -92,9 +101,6 @@
         .description{
             width: 80%;
             font-size: 16px;
-            font-weight: 100;
-            text-align: center;
-            margin-bottom: 24px;
         }
     }
 

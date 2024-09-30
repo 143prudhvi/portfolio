@@ -3,7 +3,7 @@ import './skills-component.scss';
 import { faDatabase, faLeaf, faPepperHot, faTerminal, faUserGear } from '@fortawesome/free-solid-svg-icons';
 import { faPython, faJava, faJs, faEnvira, faReact, faAngular, faAws, faDocker, faGithub, faHtml5, faCss3, faSass } from '@fortawesome/free-brands-svg-icons';
 
-const SkillsComponents = () => {
+const SkillsComponents = ({skillsRef}) => {
 
     const skills = {
         "Programming" : [
@@ -112,7 +112,7 @@ const SkillsComponents = () => {
     }
 
     return (
-        <div id='skills' className='skills'>
+        <div ref={skillsRef} id='skills' className='skills'>
             <h1 className='section-title'>Technical Skills</h1>
             {
                 Object.keys(skills).map((key) => {
