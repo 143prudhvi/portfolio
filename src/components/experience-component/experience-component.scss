@@ -1,8 +1,8 @@
 @import './../../index.scss';
 
-.education{
-    background-color: $secondary-color;
-    color: $tertiary-color;
+.experience{
+    background-color: $tertiary-color;
+    color: $secondary-color;
     padding-bottom: 8px;
 
     .timeline{
@@ -14,16 +14,16 @@
             content: '';
             width: 6px;
             position: absolute;
-            background-color: $tertiary-color;
+            background-color: $secondary-color;
             top: 0;
             bottom: 0;
-            left: 10%;
-            margin-left: -3px;
+            right: 10%;
+            margin-right: -3px;
             border-radius: 8px;
             margin-bottom: 48px;
         }
 
-        .education-cotainer{
+        .experience-cotainer{
             position: relative;
             width: 80%;
             color: $secondary-color;
@@ -43,14 +43,14 @@
                 z-index: 1;
             }
 
-            .education-content{
+            .experience-content{
                 background-color: $primary-color;
                 position: relative;
                 border-radius: 6px;
                 display: flex;
                 height: 100%;
 
-                .education-logo{
+                .experience-logo{
                     max-width: 160px;
                     background-color: $tertiary-color;
                     align-self: center;
@@ -66,26 +66,21 @@
                     }
                 }
 
-                .education-details{
+                .experience-details{
                     padding: 24px 16px;
                     font-size: 12px;
 
-                    .education-year{
+                    .experience-year{
                         font-size: 14px;
                     }
 
-                    .education-university{
+                    .experience-company{
                         font-style: italic;
                         font-size: 18px;
                         padding: 4px 0;
                     } 
 
-                    .education-grade{
-                        padding: 4px 0;
-                        font-style: italic;
-                    }
-
-                    .education-coursework{
+                    .experience-work{
                         list-style-type: none; /* Remove default list style */
                         padding: 4px 0 0 0;
                         margin: 0;
@@ -116,56 +111,51 @@
                 }
             }
         }
-        
-        .right {
-            left: 10%;
+
+        .left {
+            right: -10%;
 
             .education-logo{
-                border-radius: 0 6px 6px 0;
+                border-radius: 6px 0  0 6px;
             }
         }
-        
-        .right::before {
+
+        .left::before {
             content: " ";
             height: 0;
             position: absolute;
             top: 60px;
             width: 0;
             z-index: 1;
-            left: 30px;
+            right: 30px;
             border: medium solid $primary-color;
-            border-width: 10px 10px 10px 0;
-            border-color: transparent $primary-color transparent transparent;
-        }
-        
-        /* Fix the circle for containers on the right side */
-        .right::after {
-            left: -16px;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent $primary-color;
         }
         
     }
 }
 
 @media (max-width: $s-width) {
-    .education{
+    .experience{
         .timeline{
             &::after{
-                left: 7%;
+                right: 7%;
             }
 
-            .education-cotainer, .experience-cotainer{
+            .experience-cotainer{
                 width: 93%;
                 padding: 18px 24px;
             }
 
-            .right{
-                left: 7%;
+            .left{
+                right: 0%;
             }
 
-            .right::before{
-                left: 16px;
+            .left::before{
+                right: 16px;
                 top: 62px;
-                border-width: 8px 8px 8px 0;
+                border-width: 8px 0 8px 8px;
             }
         }
     }
