@@ -108,6 +108,23 @@ const SkillsComponents = ({skillsRef}) => {
                 "rating" : 8,
                 "icon" : faTerminal
             },
+        ],
+        "Data Visualization": [
+            {
+                "name" : "Microsoft Power BI",
+                "rating" : 8,
+                "icon" : null
+            },
+            {
+                "name" : "Tableau Desktop",
+                "rating" : 8,
+                "icon" : null
+            },
+            {
+                "name" : "Tableau Prep",
+                "rating" : 8,
+                "icon" : null
+            },
         ]
     }
 

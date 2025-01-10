@@ -8,20 +8,20 @@ const IntroComponent = ({aboutRef}) => {
     const githubURL = "https://github.com/143prudhvi";
     const linkedInURL = "https://www.linkedin.com/in/venkataannabathina/";
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setRole(() => {
-                if(role == "Data Analyst"){
-                    return "Software Engineer";
-                }
-                else{
-                    return "Data Analyst";
-                }
-            })
-        }, 3000)
+    // useEffect(() => {
+    //     const intervalId = setInterval(() => {
+    //         setRole(() => {
+    //             if(role == "Data Analyst"){
+    //                 return "Software Engineer";
+    //             }
+    //             else{
+    //                 return "Data Analyst";
+    //             }
+    //         })
+    //     }, 3000)
 
-        return () => clearInterval(intervalId);
-    })
+    //     return () => clearInterval(intervalId);
+    // })
 
     return (
         <div ref={aboutRef}>
